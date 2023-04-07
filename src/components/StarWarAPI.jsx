@@ -15,10 +15,8 @@ const StarWarAPI = (props)=>{
                 let count = 0;
                 let result = [];
                 for(let key in response.data){
-                    if (count===5){
-                        
+                    if (count===5)
                         break;
-                    }
                     else if (count===0)
                         result.push(<h1 key={key}>{response.data.name}</h1>)
                     else
